@@ -1,0 +1,452 @@
+html,
+body{
+height: 100%;
+padding:0;
+margin:0;
+}
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    color:#333;
+    box-sizing:border-box;
+}
+
+h3{
+    color:#3ca5ff;
+}
+a h3:hover{
+    color:#a3b9f7;
+}
+
+a{
+    text-decoration: none;
+    color:#3ca5ff;
+}
+
+.wrapper{
+    min-width:1050px;
+   background-color:#1D1703;
+   min-height:100%;
+
+}
+
+.signInContainer{
+   height:100vh;
+    display:flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: rgba(0,0,1, 1) 0 1px 2px;
+    min-height: 100vh;
+}
+
+.column{
+    background-color:white;
+    min-height:300px;
+    max-height:100%;
+    width: 450px;
+    overflow-y:auto;
+    
+}
+
+.column form {
+    display: flex;
+    flex-direction: column;
+    padding:24px 35px;
+}
+
+.column form input[type="text"],
+.column form input[type="email"],
+.column form input[type="password"] {
+    font-size: 14px;
+    margin: 10px 0;
+    border: none;
+    border-bottom: 1px solid #dedede;
+}
+.column form input[type="submit"] {
+    background-color: #070c08;
+    color: #fff;
+    height: 36px;
+    width: 88px;
+    border: none;
+    border-radius: 3px;
+    font-weight: 600;
+    margin-top: 10px;
+    margin-bottom: 20px;
+    margin-left:2px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.column form input[type=submit]:hover {
+    cursor:pointer;
+  }
+
+.column .header{
+    padding: 20px;
+    padding-bottom: 2px;
+    margin-left: 17px;
+
+}
+
+.column h3{
+    font-size: 24px;
+    font-weight: 600;
+    margin: 0;
+    line-height: 32px;
+    padding-top: 16px;
+    color: black;
+}
+
+.column .header span{
+    font-size:14px;
+}
+
+.column .header img{
+    padding: 0 60px;
+}
+
+.column .signInMessage{
+    text-decoration: none;
+    font-size: 15px;
+    font-weight: 400;
+}
+
+.errorMessage{
+    color:red;
+    font-size:14px;
+    font-weight:400;
+    text-align:center;
+}
+
+.previewImage,
+.previewVideo{
+    width:100%;
+
+}
+
+.previewContainer{
+    position: relative;
+    display: flex;
+}
+
+.previewContainer.small{
+    width:230px;
+    height:129px;
+    margin-right:4px;
+    display:inline-flex;
+
+}
+
+.previewContainer.small img{
+    width:100%;
+    height:100%;
+    object-fit:cover;
+}
+
+
+.previewOverlay{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.3);
+    position: absolute;
+}
+
+.previewOverlay .mainDetails h3{
+    color: white;
+    font-size: 40px;
+    margin: 15px 0;
+}
+
+
+
+.mainDetails{
+    position: relative;
+    top: 35%;
+    margin-left: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.mainDetails button{
+    font-weight: 200;
+    background-color: rgba(51,51,51,0.4);
+    color: white;
+    border: none;
+    min-width: 150px;
+    padding: 0 38px;
+    height: 50px;
+    max-height: 50px;
+    margin-bottom: 15px;
+    margin-right: 5px;
+    font-size: 23px;
+}
+
+button i{
+    color: #e245e2;
+}
+
+.mainDetails button:hover{
+    cursor:pointer;
+    background-color: white;
+    color:black;
+}
+
+.category{
+    display:flex;
+    flex-direction:column;
+    padding:10px 0;
+}
+
+.entities,
+.videos
+{
+    overflow-x:auto;
+    overflow-y:hidden;
+    white-space:nowrap;
+}
+.previewCategories{
+    padding:0 30px;
+}
+
+.errorBanner{
+    color: gold;
+    position: absolute;
+    width: 100%;
+    top: 25%;
+    text-align: center;
+    font-size: 20px;
+
+}
+
+
+.season{
+    display:flex;
+    flex-direction:column;
+    padding:10px 50px;
+}
+
+
+
+.episodeContainer{
+    display:inline-flex;
+    justify-content:center;
+    margin-right:4px;
+}
+
+.episodeContainer .contents{
+    display:inline-flex;
+    flex-direction:column;
+    width:230px;
+    position: relative;
+
+}
+
+.episodeContainer img{
+    width:230px;
+    object-fit:cover;
+
+}
+
+
+.episodeContainer .videoInfo h4,
+.episodeContainer .videoInfo span{
+color:aliceblue;
+width:100%;
+white-space:normal;
+}
+
+.episodeContainer .videoInfo{
+    max-height:200px;
+    overflow-y:auto;
+}
+
+/*#hello{
+    background-color: #e245e2;
+}*/
+
+#payOp th, td {
+    border: 15px solid black;
+  }
+
+.previewContainer.noScroll .category .entitiess{
+white-space:normal;
+}
+
+.watchContainer video{
+    width:100%;
+    height:90%;
+}
+
+.videoControls{
+    position: absolute;
+    z-index: 1;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    background-color: rgba(0,0,0,0.3);
+}
+
+.videoControls h1{
+    color:white;
+}
+
+.videoControls button{
+    font-size: 50px;
+    padding: 50px;
+    color: #fff;
+    background-color: transparent;
+    border:none;
+}
+
+.upNext{
+    height: 100%;
+    justify-content: center;
+}
+
+.upNextContainer button{
+padding:0;
+}
+
+.upNextContainer h2,
+.upNextContainer h3{
+    color:#fff;
+}
+
+.watchNav{
+    z-index:2;
+}
+
+
+.seen {
+    color: #3ca5ff;
+    font-size: 26px;
+    position: absolute;
+    top: 5px;
+    left: 5px;
+}
+
+.topBar{
+    position: fixed;
+    width: 100%;
+    z-index: 1;
+    align-items: center;
+    display: flex;
+    padding: 0 60px;
+    height: 70px;
+    box-sizing: border-box;
+    min-width: 1050px;
+    transition:background-color 200ms linear;
+}
+
+.topBar.scrolled{
+    background-color: white;
+    transition:background-color 200ms linear;
+}
+
+.logoContainer{
+    height:40px;
+}
+.logoContainer img{
+    height:100%;
+}
+
+.navLinks{
+    display: flex;
+    list-style: none;
+}
+
+.navLinks a{
+    color:#8510d8;
+    font-size:14px;
+    margin-left: 20px;
+}
+
+
+.rightItems {
+    flex: 1;
+    text-align: right;
+}
+
+.rightItems i{
+    color:#8510d8;
+    font-size: 20px;
+    margin-left: 10px;
+}
+
+.previewCategories h1{
+    color:#3ca5ff;
+}
+
+.textboxContainer{
+    padding:100px 50px;
+}
+
+.searchInput{
+    height:50px;
+    width:600px;
+    border: 1px solid white;
+    background-color: transparent;
+    color:white;
+    font-size: 20px;
+    padding: 5px 10px;
+    border-radius: 3px;
+}
+
+.settingsContainer{
+    padding-top: 60px;
+    background: transparent;
+    width: 80%;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.settingsContainer h2{
+    color:#3ca5ff;
+    margin-top:0px;
+}
+
+.settingsContainer .formSection{
+    display: flex;
+    flex-direction: column;
+    margin: 20px 0px;
+    border-bottom: 1px solid white;
+    padding-bottom: 20px;
+}
+
+.settingsContainer form input[type="text"],
+.settingsContainer form input[type="email"],
+.settingsContainer form input[type="password"]{
+    width: 300px;
+    height: 40px;
+    font-size: 15px;
+    margin: 5px 0px;
+    border: none;
+    border-radius: 3px;
+    padding: 0px 5px;
+}
+
+.settingsContainer form input[type="submit"]{
+    background-color:#3ca5ff;
+    width:100px;
+    height:40px;
+}
+
+.alertSuccess,
+.alertError{
+    margin:10px 0px;
+    
+}
+
+.alertSuccess{
+    color:#3ca5ff;
+}
+
+.alertError{
+    color:#dc1928;
+}
+
+.formSection h3{
+padding:0;
+color:#3ca5ff;
+font-size:20px;
+}
