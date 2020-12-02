@@ -1,0 +1,19 @@
+<?xml version = "1.0"?> 
+<?xml-stylesheet type = "text/xsl" href="product.xsl"?> 
+<class>
+<product prodID = "1">
+	 <paymentType>Standard</paymentType>
+        <price>500</price>
+        <duration>1 month</duration>
+</product>
+<product prodID = "2">
+ <paymentType>Premium</paymentType>
+            <price>600</price>
+            <duration>1 month</duration>
+</product>
+<product prodID = "3">
+	 <paymentType>VIP</paymentType>
+        <price>800</price>
+        <duration>1 month</duration>
+</product>
+</class>

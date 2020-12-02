@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+<meta charset="utf-8">
+<title>Feedback Form</title>
+<meta name="keywords" content="example, JavaScript Form Validation, Sample registration form" />
+<meta name="description" content="This document is an example of JavaScript Form Validation using a sample registration form. " />
+<link rel="stylesheet" type="text/css" href="assets/style/style.css">  
+    <style>
+    body{
+        background-image: url('stars.jpg');
+        background-size:100% 100%;
+        background-repeat: no-repeat;
+    
+    }
+</style>   
+<script src="sample-registration-form-validation.js"></script>
+</head>
+
+<body onload="document.registration.userid.focus();">
+<div class="signInContainer">
+       
+    <div class="column">
+        <div class="header">
+        <img src="assets/images/sparkleLogo.png" alt="SPARKLE" title="Logo">
+            <h3>Feedback</h3>
+            
+
+<form name='registration' onSubmit="return formValidation();" action="x.html">
+
+<label for="userid">Username</label>
+<input type="text" name="userid" size="12" />
+
+<label for="username">Name</label>
+<input type="text" name="username" size="50" />
+<label for="country">Country:</label>
+<select name="country">
+<option selected="" value="Default">(Please select a country)</option>
+<option value="AF">Australia</option>
+<option value="AL">Canada</option>
+<option value="DZ">India</option>
+<option value="AS">Russia</option>
+<option value="AD">USA</option>
+</select></li>
+<br>
+<label for="zip">ZIP Code</label>
+<input type="text" name="zip" />
+<label for="email">Email</label>
+<input type="text" name="email" size="50" />
+<!--<input type="radio" name="msex" value="Male" /><span>Male</span>
+<input type="radio" name="fsex" value="Female" /><span>Female</span>-->
+<label for="male"><input type="radio" id="male" name="gender" value="male">Male</label>
+            
+<label for="female"> <input type="radio" id="female" name="gender" value="female">Female</label><br>
+<label>Rating</label>
+<label for="la">
+<input type="checkbox" name="en" value="en" checked />Goob</label>
+<label for="la">
+<input type="checkbox" name="nonen" value="noen" />Average
+</label>
+<label for="la">
+<input type="checkbox" name="nonen" value="noen" />Bad
+</label>
+<br>
+<label for="desc">Feedback/Complaint</label>
+<textarea name="desc" id="desc"></textarea>
+<input type="submit" name="submit" value="Submit" />
+
+</form>
+<style>
+    .footer {
+    position: fixed;
+    left: 0;
+    bottom: 0;
+    width: 30%;
+    height:7%;
+    background-color: blue;
+    color: white;
+    text-align: center;
+    }
+    </style>
+
+    <div class="footer">
+    <p style="color:white;">Contact:sparkle@gmail.com</p>
+    </div>
+</div>
+</div>    
+</body>
+</html>
